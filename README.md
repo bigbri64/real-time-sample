@@ -1,4 +1,4 @@
-# Real Tme Sample
+# Real Time Sample
 
 A Javascript code sample for displaying real time data in Bing Maps REST [Route Transit API](https://msdn.microsoft.com/en-us/library/ff701717.aspx) requests. 
 
