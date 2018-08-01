@@ -46,7 +46,7 @@
 	{
 		let time_stamp = time_string.split('/Date(')[1].split(')/')[0];
 		let op = (time_stamp.indexOf('+') > -1) ? '+' : '-';
-		[ordinal, offset] = time_stamp.split(op).map(Number);
+		let [ordinal, offset] = time_stamp.split(op).map(Number);
 		return moment(ordinal);
 	}
 
