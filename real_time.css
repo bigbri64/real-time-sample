@@ -1,0 +1,26 @@
+
+#header {
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.card-header {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    margin-top: 5px;
+}
+
+.row {
+    padding: 10px;
+}
+
+#deck {
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    overflow: scroll;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bing Maps Routes-Transit API w/ real time data -- Address Example">
+    <meta name="author" content="Chris French">
+
+    <title>Real Time Example</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="real_time.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <main role="main" class="container">
+        <div id="header" class="col-12">
+            <headfont>Real Time Route Transit Viewer</headfont>
+        </div>
+
+        <div id="form_view" class="col-12">
+            <form>
+                <div class="row">
+                    <div class="col-6 input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Start: </span>
+                        </div>
+                        <input class="form-control" id="begin-destination">
+                    </div>
+
+                    <div class="col-6 input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">End: </span>
+                        </div>
+                        <input class="form-control" id="end-destination">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Time: </span>
+                        </div>
+                        <input id="user_time" type="time">
+                    </div>
+
+                    <div class="col input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Time Type: </span>
+                            <select id="time_type">
+                                <option selected="selected" value="Arrival">Arrival</option>
+                                <option value="Departure">Departure</option>
+                                <!-- <option value="LastAvailable">LastAvailable</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col pull-right input-group">
+                        <button id="find-route" type="submit" class="btn
+								 btn-danger">Find Route</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr />
+        <div id="deck"></div>
+        <div id="add-url"></div>
+        <div class="col-12">
+            <span class="float-right">Bing Maps REST Route Transit API w/ Real Time Data Code Sample -
+                <a href="https://www.bingmapsportal.com/">Create a BING Maps API Key Today!</a>
+            </span>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="real_time.js"></script>
+</body>
+
+</html>
