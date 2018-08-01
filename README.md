@@ -7,7 +7,7 @@ A Javascript code sample for displaying real time data in Bing Maps REST [Route 
 
 ## How to Run
 
-To use this samples, simply follow these steps:
+To use this sample, simply follow these steps:
 
 1. clone this repo:
 
