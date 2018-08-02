@@ -4,8 +4,7 @@
 	// v-chrfr@microsoft.com
 	// July/August 2018
 	
-	const DEFAULT_KEY = "*** Enter API Key HERE ***";
-	const API_KEY = DEFAULT_KEY;
+	const API_KEY = "*** Enter API Key HERE ***";
 
 	function MakeCard(header, body)
 	{
@@ -266,7 +265,7 @@
 		'DOMContentLoaded',
 		function ()
 		{
-			if (API_KEY == DEFAULT_KEY)
+			if (API_KEY == "*** Enter API Key HERE ***")
 			{
 				alert('Remember to open `real_time.js` in an editor, change API_KEY to be equal to your Bing Maps API Key, and then save the file');
 			}
