@@ -53,7 +53,12 @@
 	{
 		if (data == null)
 		{
-			let card = MakeCard("Unable to find any routes!", "Try using a different time.");
+			let header = document.createElement('div');
+			let body = document.createElement('div');
+			header.innerHTML = "Unable to find any routes!";
+			body.innerHTML = "Try using a different time.";
+			
+			let card = MakeCard(header, body);
 			document.getElementById('deck').appendChild(card);
 
 		}
